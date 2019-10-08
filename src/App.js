@@ -6,6 +6,8 @@ import ThemeContextProvider from './context/ThemeContext';
 import AuthContextProvider from './context/AuthContext';
 import BookContextProvider from './context/BookContext';
 import Songlist from './components/Songlist';
+import AgeContextProvider from './context/AgeContext';
+import Age from './components/Age';
 
 function App() {
   return (
@@ -20,6 +22,9 @@ function App() {
         </ThemeContextProvider>
       </AuthContextProvider>
       <Songlist />
+      <AgeContextProvider>
+        <Age/>
+      </AgeContextProvider>
     </div>
   );
 }
